@@ -14,6 +14,7 @@ namespace CSharp
         public float CostFromGoal { get; set; }
         public float TotalCost { get; set; }
         public string Name { get; set; }
+        public Node Parent{ get; set;}
         public Node Next { get; set; }
     }
 }

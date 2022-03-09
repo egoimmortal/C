@@ -31,9 +31,6 @@ namespace CSharp
             int iNowTurn = 0;
 
             main.Init(rnd, lCreature, map);
-
-            //map.SetMap(0, 0, "草");
-            //map.SetMap(map.GetMap().GetLength(0) - 1, map.GetMap().GetLength(1) - 1, "草");
             main.WritwMap(map);
 
             while(true)
@@ -58,16 +55,6 @@ namespace CSharp
 
             System.Console.WriteLine("按任意鍵離開遊戲");
             System.Console.ReadLine();
-            /*
-            foreach ((int, int) item in map.GetIdleMap())
-            {
-                System.Console.WriteLine(item);
-            }
-            */
-            //System.Console.WriteLine(map.GetIdleMap()[0].Item2);//取得LIST第一個內容
-            //System.Console.WriteLine(map.GetIdleMap()[0].Item1);//取得LIST第一個內容的第一個值
-            //System.Console.WriteLine(map.GetIdleMap().Count);//取得LIST長度
-            //Console.WriteLine(aStar.Operation(t1, t2)[0]);
         }
 
         ///<summary>

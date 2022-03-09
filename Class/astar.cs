@@ -47,7 +47,6 @@ namespace AStar
                 if(nowPoint.vPos == goal.vPos)
                 {
                     GetResultPath(cameFrom, goal);
-
                     return resultList;
                 }
 
@@ -74,7 +73,9 @@ namespace AStar
         {
             if(cameFrom.Contains(currentNode))
             {
-                GetResultPath(cameFrom, currentNode);
+                cameFrom.Remove(currentNode);
+                resultList.Add(currentNode);
+                GetResultPath(cameFrom, currentNode.Parent);
             }
         }
 
